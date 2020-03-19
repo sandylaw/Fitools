@@ -1,7 +1,7 @@
 ## FiTools
 此工具箱是本人在从事会计工作中日常使用的一些批处理，支持Excel 2007以上版本。
 ## 主要功能
-![image](https://user-images.githubusercontent.com/2892377/77033703-f5778e80-69e2-11ea-8a5f-ce46461d9aa4.png)
+
 
 - 选择的数据乘以设置数，默认乘以一万。
 - 选择的数据除以设置数，默认除以一万。

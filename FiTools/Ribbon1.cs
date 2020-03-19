@@ -60,9 +60,18 @@ namespace FiTools
             jizhun = Int32.Parse(editBox1.Text);
             foreach (Excel.Range rg in ExcelApp.Selection)
             {
-
-                if (rg.HasFormula) //判断是否含有公式
-                { rg.Formula = "=(" + rg.Formula.Substring(1) + ")" + "*" + jizhun; }
+                if (ExcelApp.WorksheetFunction.IsNumber(rg.Value))
+                {
+                    if (rg.HasFormula) //判断是否含有公式
+                    { 
+                        rg.Formula = "=(" + rg.Formula.Substring(1) + ")" + "*" + jizhun; //substring用来去除原来公式的=号
+                    }
+                    else
+                    {
+                        rg.Formula = "=(" + rg.Formula + ")" + "*" + jizhun; 
+                    }
+                }
+                
 
                 else
                 { }
@@ -77,8 +86,18 @@ namespace FiTools
             jizhun = Int32.Parse(editBox1.Text);
             foreach (Excel.Range rg in ExcelApp.Selection)
             {
-                if (rg.HasFormula)//判断是否含有公式
-                { rg.Formula = "=(" + rg.Formula.Substring(1) + ")" + "/" + jizhun; }
+                if (ExcelApp.WorksheetFunction.IsNumber(rg.Value))
+                {
+                    if (rg.HasFormula)//判断是否含有公式
+                    { 
+                        rg.Formula = "=(" + rg.Formula.Substring(1) + ")" + "/" + jizhun;
+                    }
+                    else
+                    {
+                        rg.Formula = "=(" + rg.Formula + ")" + "/" + jizhun;
+                    }
+                }
+                
 
                 else
                 { }
@@ -243,6 +262,74 @@ namespace FiTools
         {
             AboutBox1 box = new AboutBox1();
             box.ShowDialog();
+        }
+
+        private void Rup_num_Click(object sender, RibbonControlEventArgs e)
+        {    //向上round
+            int xsw = Int32.Parse(xiaoshuwei.Text);//获取小数位
+            foreach (Excel.Range rg in ExcelApp.Selection)
+            {
+                if (ExcelApp.WorksheetFunction.IsNumber(rg))
+                { rg.Value = ExcelApp.WorksheetFunction.RoundUp(rg.Value, xsw); }
+                else
+                { }
+            }
+        }
+
+        private void Rup_set_Click(object sender, RibbonControlEventArgs e)
+        {
+            //按照指定的小数位加Roundup公式
+            int xsw = Int32.Parse(xiaoshuwei.Text);//获取小数位
+            foreach (Excel.Range rg in ExcelApp.Selection)
+            {
+                if (ExcelApp.WorksheetFunction.IsNumber(rg))
+                {
+                    if (rg.HasFormula)//判断是否含有公式
+                    { rg.Formula = "=roundup(" + rg.Formula.Substring(1) + "," + xsw + ")"; }
+                    else
+                    {
+                        rg.Formula = "=roundup(" + rg.Formula + "," + xsw + ")";
+                    }
+                }
+
+
+                else
+                { }
+            }
+        }
+
+        private void Rdown_num_Click(object sender, RibbonControlEventArgs e)
+        {
+            //向下round
+            int xsw = Int32.Parse(xiaoshuwei.Text);//获取小数位
+            foreach (Excel.Range rg in ExcelApp.Selection)
+            {
+                if (ExcelApp.WorksheetFunction.IsNumber(rg))
+                { rg.Value = ExcelApp.WorksheetFunction.RoundDown(rg.Value, xsw); }
+                else
+                { }
+            }
+        }
+
+        private void Rdown_set_Click(object sender, RibbonControlEventArgs e)
+        {//按照指定的小数位加Rounddown公式
+            int xsw = Int32.Parse(xiaoshuwei.Text);//获取小数位
+            foreach (Excel.Range rg in ExcelApp.Selection)
+            {
+                if (ExcelApp.WorksheetFunction.IsNumber(rg))
+                {
+                    if (rg.HasFormula)//判断是否含有公式
+                    { rg.Formula = "=rounddown(" + rg.Formula.Substring(1) + "," + xsw + ")"; }
+                    else
+                    {
+                        rg.Formula = "=rounddown(" + rg.Formula + "," + xsw + ")";
+                    }
+                }
+
+
+                else
+                { }
+            }
         }
 
         

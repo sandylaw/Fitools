@@ -61,6 +61,10 @@
             this.About = this.Factory.CreateRibbonGroup();
             this.about0 = this.Factory.CreateRibbonButton();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.Rup_num = this.Factory.CreateRibbonButton();
+            this.Rup_set = this.Factory.CreateRibbonButton();
+            this.Rdown_num = this.Factory.CreateRibbonButton();
+            this.Rdown_set = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.group2.SuspendLayout();
@@ -97,6 +101,7 @@
             this.editBox1.Label = "换算";
             this.editBox1.Name = "editBox1";
             this.editBox1.ShowImage = true;
+            this.editBox1.SuperTip = "默认10000，可修改，记得回车";
             this.editBox1.Text = "10000";
             this.editBox1.TextChanged += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.editBox1_TextChanged);
             // 
@@ -177,6 +182,7 @@
             this.editBox2.Label = "指定列";
             this.editBox2.Name = "editBox2";
             this.editBox2.ShowImage = true;
+            this.editBox2.SuperTip = "默认B，可修改，记得回车";
             this.editBox2.Text = "B";
             this.editBox2.TextChanged += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.editBox2_TextChanged);
             // 
@@ -186,6 +192,7 @@
             this.editBox3.Label = "指定值";
             this.editBox3.Name = "editBox3";
             this.editBox3.ShowImage = true;
+            this.editBox3.SuperTip = "默认空值，可修改，记得回车";
             this.editBox3.Text = null;
             this.editBox3.TextChanged += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.editBox3_TextChanged);
             // 
@@ -202,6 +209,10 @@
             this.group4.Items.Add(this.xiaoshuwei);
             this.group4.Items.Add(this.R_num);
             this.group4.Items.Add(this.R_Set);
+            this.group4.Items.Add(this.Rup_num);
+            this.group4.Items.Add(this.Rup_set);
+            this.group4.Items.Add(this.Rdown_num);
+            this.group4.Items.Add(this.Rdown_set);
             this.group4.Label = "小数位";
             this.group4.Name = "group4";
             // 
@@ -211,6 +222,7 @@
             this.xiaoshuwei.Label = "小数位";
             this.xiaoshuwei.Name = "xiaoshuwei";
             this.xiaoshuwei.ShowImage = true;
+            this.xiaoshuwei.SuperTip = "默认2，可修改，记得回车";
             this.xiaoshuwei.Text = "2";
             this.xiaoshuwei.TextChanged += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.xiaoshuwei_TextChanged);
             // 
@@ -272,6 +284,38 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
+            // Rup_num
+            // 
+            this.Rup_num.Image = ((System.Drawing.Image)(resources.GetObject("Rup_num.Image")));
+            this.Rup_num.Label = "RoundUp一下";
+            this.Rup_num.Name = "Rup_num";
+            this.Rup_num.ShowImage = true;
+            this.Rup_num.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.Rup_num_Click);
+            // 
+            // Rup_set
+            // 
+            this.Rup_set.Image = ((System.Drawing.Image)(resources.GetObject("Rup_set.Image")));
+            this.Rup_set.Label = "RoundUp公式";
+            this.Rup_set.Name = "Rup_set";
+            this.Rup_set.ShowImage = true;
+            this.Rup_set.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.Rup_set_Click);
+            // 
+            // Rdown_num
+            // 
+            this.Rdown_num.Image = ((System.Drawing.Image)(resources.GetObject("Rdown_num.Image")));
+            this.Rdown_num.Label = "RoundDown一下";
+            this.Rdown_num.Name = "Rdown_num";
+            this.Rdown_num.ShowImage = true;
+            this.Rdown_num.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.Rdown_num_Click);
+            // 
+            // Rdown_set
+            // 
+            this.Rdown_set.Image = ((System.Drawing.Image)(resources.GetObject("Rdown_set.Image")));
+            this.Rdown_set.Label = "RoundDown公式";
+            this.Rdown_set.Name = "Rdown_set";
+            this.Rdown_set.ShowImage = true;
+            this.Rdown_set.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.Rdown_set_Click);
+            // 
             // Ribbon1
             // 
             this.Name = "Ribbon1";
@@ -322,6 +366,10 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup About;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton about0;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton Rup_num;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton Rup_set;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton Rdown_num;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton Rdown_set;
     }
 
     partial class ThisRibbonCollection

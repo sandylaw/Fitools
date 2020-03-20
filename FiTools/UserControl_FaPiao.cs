@@ -135,7 +135,10 @@ namespace FiTools
 
 
                             if (Yarray[0] > Xarray[0])//最后一张发票金额大于相同发票的金额，需要调节金额步子
-                            { MessageBox.Show("溢出，请调整金额调节步子！"); }
+                            { 
+                                MessageBox.Show("溢出，请调整金额调节步子！");
+                                return;
+                            }
                             else
                             {
                                 if (Math.Round(Xarray[3] * zhangshu + Yarray[3] - Zarray[3], 2, MidpointRounding.AwayFromZero) == 0)//判断税额是否凑齐

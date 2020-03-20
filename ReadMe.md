@@ -1,8 +1,8 @@
 ## FiTools
 此工具箱是本人在从事会计工作中日常使用的一些批处理，支持Excel 2007以上版本。
 ## 主要功能
-![](https://github.com/sandylaw/Fitools/blob/master/png/jietu.jpg)
-
+![](https://github.com/sandylaw/Fitools/blob/master/png/xc.gif)
+![](https://github.com/sandylaw/Fitools/blob/master/png/fapiaochaifen.gif)
 - 选择的数据乘以设置数，默认乘以一万。
 - 选择的数据除以设置数，默认除以一万。
 - 选择的公式乘以设置数，默认乘以一万。
@@ -13,6 +13,7 @@
 - 指定列(默认B列）、指定值（默认空值），删除对应行。
 - 指定小数位数，Round一下，改变数值的小数位。
 - 指定小数为主，加上Round公式。
+- 发票开票拆分功能。
 - 直接调用系统的计算器和记事本。
 - 如果对你有帮助，谢谢你的打赏。
 <figure class="half">

@@ -1,0 +1,15 @@
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\bin\Debug\FiTools.dll
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\bin\Debug\FiTools.pdb
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\bin\Debug\FiTools.dll.manifest
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\bin\Debug\FiTools.vsto
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\obj\Debug\FiTools.Properties.Resources.resources
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\obj\Debug\FiTools.csproj.GenerateResource.Cache
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\obj\Debug\FiTools.dll
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\obj\Debug\FiTools.pdb
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\obj\Debug\FiTools.Ribbon1.resources
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\obj\Debug\FiTools.AboutBox1.resources
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\obj\Debug\FiTools.UserControl_FaPiao.resources
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\bin\Debug\FiTools.dll.config
+d:\documents\visual studio 2012\Projects\FiTools\FiTools\obj\Debug\FiTools.csprojResolveAssemblyReference.cache

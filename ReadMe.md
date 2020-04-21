@@ -16,7 +16,14 @@
 - 发票开票拆分功能。
 - 直接调用系统的计算器和记事本。
 - 如果对你有帮助，谢谢你的打赏。
+```
+链接：https://pan.baidu.com/s/1Cn12Rw_Rl1NhkWiedEbAYQ 
+提取码：umwq 
+复制这段内容后打开百度网盘手机App，操作更方便哦
+```
 <figure class="half">
 <img src="https://github.com/sandylaw/Fitools/blob/master/png/wechat.jpg" width = "30%" />
 <img src="https://github.com/sandylaw/Fitools/blob/master/png/alipay.jpg" width = "30%" />
 </figure>
+
+
